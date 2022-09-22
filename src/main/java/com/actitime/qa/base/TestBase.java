@@ -8,7 +8,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.actitime.qa.util.TestUtil;
@@ -38,7 +37,7 @@ public class TestBase {
 		
 		public static void initialization(){
 		
-String browserName = properties.getProperty("browser");
+			String browserName = properties.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
