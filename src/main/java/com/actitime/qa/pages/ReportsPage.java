@@ -12,13 +12,13 @@ public class ReportsPage extends TestBase  {
 	
 	//Page Factory - Object Repository
 	
-			@FindBy(xpath = "//table[@id='configs']")
+			@FindBy(xpath = "//table[@id='configs']")//reports list
 			WebElement reportsList;
 			
-			@FindBy(xpath = "//table[@id='reportConfig_119']")
+			@FindBy(xpath = "//table[@id='reportConfig_119']")//leaves report cell
 			WebElement reportLink;
 			
-			@FindBy(xpath = "//div[@class='lightbox lightboxWithWhiteContent pdfPreviewLightbox createChartMode ancestorEventsEmitter verticalBar']")
+			@FindBy(xpath = "//div[@class='lightbox lightboxWithWhiteContent pdfPreviewLightbox createChartMode ancestorEventsEmitter verticalBar']")//leaves report details
 			WebElement reportDetailsSlide;
 			
 			//initialization
@@ -31,17 +31,16 @@ public class ReportsPage extends TestBase  {
 			
 			//Action/Methods
 			
+			//test if the reports list is displayed
 			public Boolean validateReportsList() {
 				return reportsList.isDisplayed();
 			}
 			
 			
-			
+			//test if the HR is able to see the leaves report
 			public boolean clickOnReport() {
-				
 				reportLink.click();
 				return reportDetailsSlide.isDisplayed();
-				
 			}
 			
 
