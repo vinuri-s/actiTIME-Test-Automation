@@ -12,12 +12,12 @@ public class HomePage extends TestBase {
 
 	
 	//Page Factory - Object Repository
-	
-		@FindBy(xpath = "//a[@class='content tasks']")
-		WebElement taskLink;
 		
 		@FindBy(xpath = "//a[@class='content reports']")
 		WebElement reportsLink;
+		
+		@FindBy(xpath = "//a[@class='content users']")
+		WebElement usersLink;
 		
 		@FindBy(xpath = "//div[@id='logo_aT']")
 		WebElement actitimeLogo;
@@ -39,11 +39,10 @@ public class HomePage extends TestBase {
 		}
 		
 		
-		
-		public TasksPage clickOnTaskLink() {
+		public UsersPage clickOnUsersLink() {
 			
-			taskLink.click();
-			return new TasksPage();
+			usersLink.click();
+			return new UsersPage();
 			
 		}
 		
