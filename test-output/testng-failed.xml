@@ -6,17 +6,10 @@
   </listeners>
   <test thread-count="5" name="actiTime Test Automation Testcases(failed)">
     <classes>
-      <class name="com.actitime.qa.testcases.HomePageTest">
-        <methods>
-          <include name="usersPageUserLinkTest"/>
-          <include name="seup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.actitime.qa.testcases.HomePageTest -->
       <class name="com.actitime.qa.testcases.ReportsPageTest">
         <methods>
-          <include name="reportsListLinkTest"/>
           <include name="tearDown"/>
+          <include name="reportsListTest"/>
           <include name="seup"/>
         </methods>
       </class> <!-- com.actitime.qa.testcases.ReportsPageTest -->
