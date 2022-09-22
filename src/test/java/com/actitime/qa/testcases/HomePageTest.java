@@ -35,7 +35,7 @@ public class HomePageTest extends TestBase{
 	public void homePageLogoTest() {
 		
 	boolean flag= homePage.validateActiTimeLogo();
-	Assert.assertTrue(flag,"Cannot find the Logo");
+	Assert.assertTrue(flag,"Cannot find the home page Logo");
 		
 	}
 	
@@ -44,6 +44,30 @@ public class HomePageTest extends TestBase{
 		
 	homePage.clickOnUsersLink();
 
+		
+	}
+	
+	@Test(priority = 3)
+	public void homePageTimeSheetLinkTest() {
+		
+	homePage.clickOnTimeSheetLink();
+
+		
+	}
+	
+	@Test(priority = 4)
+	public void timSheetTableTest() {
+		
+	boolean flag= homePage.timeSheetTableTest();
+	Assert.assertTrue(flag,"Cannot find the time sheet");
+		
+	}
+	
+	@Test(priority = 5)
+	public void timSheetApprovalTest() {
+		
+	boolean flag= homePage.validateApprovalStatus();
+	Assert.assertTrue(flag,"Cannot find the time sheet approval/rejection option");
 		
 	}
 	
