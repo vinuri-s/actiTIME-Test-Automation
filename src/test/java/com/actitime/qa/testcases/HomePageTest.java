@@ -8,11 +8,13 @@ import org.testng.annotations.Test;
 import com.actitime.qa.base.TestBase;
 import com.actitime.qa.pages.HomePage;
 import com.actitime.qa.pages.LoginPage;
+import com.actitime.qa.pages.UsersPage;
 
 public class HomePageTest extends TestBase{
 
 	LoginPage loginPage;
 	HomePage homePage;
+	UsersPage usersPage;
 	public HomePageTest() {
 		super();
 		
@@ -37,14 +39,14 @@ public class HomePageTest extends TestBase{
 		
 	}
 	
-	
 	@Test(priority = 2)
-	public void homePageTaskLinkTest() {
+	public void usersPageUserLinkTest() {
 		
-	homePage.clickOnTaskLink();
+	homePage.clickOnUsersLink();
 
 		
 	}
+	
 	
 	@AfterMethod
 	public void tearDown() {
