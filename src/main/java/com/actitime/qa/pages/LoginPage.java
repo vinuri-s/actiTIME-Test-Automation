@@ -21,8 +21,6 @@ public class LoginPage extends TestBase {
 	WebElement userName;
 	
 	
-	
-	
 	@FindBy(xpath = "//input[@type='password'and @name='pwd']")
 	WebElement passWord;
 	
